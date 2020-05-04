@@ -27,6 +27,11 @@ class Scraper
     
     personalpage.css("div.main-wrapper.profile").each do |profile|
       twitterurl = profile.css("a").attribute("href").value
+      linkedinurl = 
+      githuburl = 
+      blogurl = 
+      profile_quote = 
+      bio = 
     profile_info = {:twitterurl => twitterurl, :linkedinurl =>linkedinurl, :githuburl => githuburl, :blogurl => blogurl, :profile_quote => profile_quote, :bio => bio}
   end
 
