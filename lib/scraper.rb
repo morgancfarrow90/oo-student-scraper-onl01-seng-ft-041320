@@ -32,7 +32,7 @@ class Scraper
       blogurl = 
       profile_quote = 
       bio = 
-    profile_info = {:twitterurl => twitterurl, :linkedinurl =>linkedinurl, :githuburl => githuburl, :blogurl => blogurl, :profile_quote => profile_quote, :bio => bio}
+      profile_info = {:twitterurl => twitterurl, :linkedinurl =>linkedinurl, :githuburl => githuburl, :blogurl => blogurl, :profile_quote => profile_quote, :bio => bio}
   end
 
 end
