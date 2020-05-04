@@ -8,7 +8,7 @@ class Scraper
     doc = Nokogiri::HTTP(open(https://learn-co-curriculum.github.io/student-scraper-test-page/index.html))
     
     student = self.new
-    student.name = doc.css
+    student.name = doc.search('').text
     
   end
 
