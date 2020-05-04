@@ -10,6 +10,7 @@ class Scraper
     student = self.new
     student.name = doc.search('').text 
     student.location = doc.search('').text
+    student.profile_url = doc.search('').text
     
   end
 
