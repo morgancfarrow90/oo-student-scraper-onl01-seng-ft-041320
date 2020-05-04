@@ -16,6 +16,7 @@ class Scraper
     
     student.collect do |student| 
       students = {:name = student.name, :location = student.location, :profile_url = student.profile_url}
+    end
   end
 
   def self.scrape_profile_page(profile_url)
