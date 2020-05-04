@@ -13,8 +13,6 @@ class Scraper
     student.name = doc.search('h4.student-name').text 
     student.location = doc.search('p.student-location').text
     student.profile_url = doc.search('a.href').text
-    
-    
   end
 
   def self.scrape_profile_page(profile_url)
