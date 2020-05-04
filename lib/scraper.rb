@@ -5,7 +5,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     students = {}
-    doc = Nokogiri::HTTP(open-uri)
+    doc = Nokogiri::HTTP(open())
     
   end
 
