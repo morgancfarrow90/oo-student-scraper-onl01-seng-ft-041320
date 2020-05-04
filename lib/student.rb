@@ -8,6 +8,7 @@ class Student
     student_hash.each do |k,v|
       instance_variable_set("@#{k}", v) unless v.nil?
     end
+    @@all << self
   end
 
   def self.create_from_collection(students_array)
