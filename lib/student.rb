@@ -21,6 +21,7 @@ class Student
     attributes_hash.each do |k,v|
       instance_variable_set("@#{k}", v) unless v.nil?
   end
+end
 
   def self.all
     @@all
