@@ -3,7 +3,7 @@ require 'pry'
 
 class Scraper
   
-  attr_accessor :name, :location, :profile_url
+  attr_accessor :name, :location, :profile_url,  :twitterurl, :linkedinurl, :githuburl, :blogurl, :profile_quote, :bio
 
   def self.scrape_index_page(index_url)
     page = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
@@ -23,7 +23,7 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     personalpage = Nokogiri::HTTP(open("profile_url"))
-    
+    :twitterurl, :linkedinurl, :githuburl, :blogurl, :profile_quote, :bio
   end
 
 end
