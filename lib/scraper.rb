@@ -2,6 +2,8 @@ require 'open-uri'
 require 'pry'
 
 class Scraper
+  
+  attr_accessor :name, :location, :profile_url
 
   def self.scrape_index_page(index_url)
     students = {}
@@ -11,6 +13,7 @@ class Scraper
     student.name = doc.search('').text 
     student.location = doc.search('').text
     student.profile_url = doc.search('').text
+    
     
   end
 
