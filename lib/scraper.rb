@@ -25,7 +25,7 @@ class Scraper
     personalpage = Nokogiri::HTTP(open("profile_url"))
     student_profiles = []
     
-    personalpage.css()
+    personalpage.css("div.main-wrapper.)
     profile_info = {:twitterurl => twitterurl, :linkedinurl =>linkedinurl, :githuburl => githuburl, :blogurl => blogurl, :profile_quote => profile_quote, :bio => bio}
   end
 
