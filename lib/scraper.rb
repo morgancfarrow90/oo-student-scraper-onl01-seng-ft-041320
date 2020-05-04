@@ -23,6 +23,7 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     personalpage = Nokogiri::HTTP(open("profile_url"))
+    student_profiles = []
     profile_info = {:twitterurl => twitterurl, :linkedinurl =>linkedinurl, :githuburl => githuburl, :blogurl => blogurl, :profile_quote => profile_quote, :bio => bio}
   end
 
