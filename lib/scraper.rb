@@ -11,7 +11,7 @@ class Scraper
     
     student = self.new
     student.name = doc.search('h4.student-name').text 
-    student.location = doc.search('').text
+    student.location = doc.search('p.student-location').text
     student.profile_url = doc.search('').text
     
     
