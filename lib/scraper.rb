@@ -14,7 +14,8 @@ class Scraper
     student.location = doc.search('p.student-location').text
     student.profile_url = doc.search('a.href').text
     
-    
+    student.collect do |student| 
+      students = {:name 
   end
 
   def self.scrape_profile_page(profile_url)
