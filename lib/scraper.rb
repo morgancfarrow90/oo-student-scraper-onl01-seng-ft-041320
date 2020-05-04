@@ -16,7 +16,7 @@ class Scraper
     
     student.collect do |student| 
       students = {:name = student.name, :location = student.location, :profile_url = student.profile_url}
-      binding pry 
+  
     end
   end
 
